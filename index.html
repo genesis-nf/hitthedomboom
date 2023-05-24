@@ -8,7 +8,6 @@
     <title>Hit the dom boom</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </head>
@@ -16,75 +15,123 @@
 <body class="w-full h-full">
     <header>
         <nav class="p-5 shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center lg:pl-32">
+
+            <div class="flex justify-between items-center">
+
                 <span class="text-2x1 cursor-pointer">
-                    <img class="h-10 inline" src="./image/logo.png" alt="" srcset="">
+                    <img class="h-18 md:h-14 inline mt-14 ml-16 md:ml-40" src="./image/logo.png" alt="" srcset="">
                 </span>
-                <div class="w-5 text-3x1 green mb-20  rounded-full	px-7 py-1  cursor-pointer mx-2 md:hidden block">
+
+                <div
+                    class="w-5 text-3x1 bg-green-500 mb-20  rounded-full px-7 py-1 cursor-pointer mx-2 md:hidden block">
                     <ion-icon name="menu" onClick="Menu(this)"></ion-icon>
                 </div>
             </div>
 
-            <ul class="md:flex md:items-center hover-bg-green-500 z-[0] md:z-auto md:static absolute text-base text-white w-full text-center
-             md:w-auto md:my-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 right-[-700px] transition-all  duration-500">
-                <li class="mx-4 my-6 md:my-0 bb-2">
-                    <a href="#" class="text-x1 hover:text-cyan-500 duration-500">Premium</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-x1 hover:text-cyan-500 duration-500">Help</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-x1 hover:text-cyan-500 duration-500">Downland</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-x1 dark-green hover:text-cyan-500 duration-500">Sing Up</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-x1 hover:text-cyan-500 duration-500">Log In</a>
-                </li>
-            </ul>
+            <div>
+
+                <ul
+                    class="md:flex md:items-center bg-cyan-900 md:bg-transparent z-[1] md:z-auto md:static absolute text-lg 
+            md:text-sm text-white w-full text-center md:w-auto py-4 pl-7 md:mr-40 mt-6 md:opacity-100 opacity-0 left-[-700px] overflow-hidden transition-all  duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-x1 hover:text-green-500 duration-500">Premium</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-x1 hover:text-green-500 duration-500">Help</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-x1 hover:text-green-500 duration-500">Downland</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-x1 hover:text-green-500 duration-500">Sing Up</a>
+                    </li>
+                    <li class="sm:hidden">
+                        <p>|</p>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-x1 hover:text-green-500 duration-500">Log In</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main class="w-full">
-        <!-- bateria,  -->
-        <section class="max-md text-center py-8 lg:flex lg:flex-row-reverse lg:pl-16">
-            <img class="p-4 lg:max-w-4xl lg:p-16" src="/image/drumkit.png" alt="A functional Yamaha Drumkit">
-            <!--  8 sonidos/8 botones-->
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="invisible bg-transparent rounded-full"></div>
-            <div class="p-16 text-start lg:pl-16">
-                <h1 class="text-white text-6xl font-semibold p-2 lg:text-7xl">Music for everyone.</h1>
-                <p class="p-2 text-sm lg:text-base">Millions of songs. No credit card needed</p>
-                <button onclick="" class="green py-2 px-8 m-2 rounded-[40px]">HIT THE</button>
-            </div>
 
+    <main class="w-full">
+        <section class="max-md text-center py-8 lg:flex lg:flex-row-reverse lg:pl-16 text-white">
+            
+            <img class="p-4 lg:max-w-4xl  lg:p-16 md:w-100 absolute" src="./image/drumkit.png"
+                alt="A functional Yamaha Drumkit">
+
+            <div class="relative md:absolute md:w-3/5  md:mr-20 md:mt-10">
+
+                <div class="relative  flex justify-between w-98 ml-7 mr-8 mt-9 md:mt-24 md:ml-28 ">
+                    <div>
+                        <audio id="sound" src="./audio/bombo (1).wav"></audio>
+                        <button class="bg-black rounded-full h-12 w-12 " id="myButton"></button>
+                    </div>
+                    <div>
+                        <audio id="sound2" src="./audio/crash.wav"></audio>
+                        <button class="rounded-full h-12 w-12 bg-black" id="myButton2"></button>
+                    </div>
+                </div>
+                <div class="relative flex justify-center top-[-24px] ">
+                    <div>
+                        <audio id="sound3" src="./audio/hit-hat.wav"></audio>
+                        <button class=" rounded-full md:ml-20 mr-8 h-16 w-16 bg-black " id="myButton3"></button>
+                    </div>
+                    <div>
+                        <audio id="sound4" src="./audio/redoblante.wav"></audio>
+                        <button class=" rounded-full h-16 w-16 bg-black " id="myButton4"></button>
+                    </div>
+                </div>
+                <div class="relative flex justify-between w-98 ml-16 mr-16 top-[-64px] md:mt-16 md:ml-40  ">
+                    <div>
+                        <audio id="sound5" src="./audio/tom1.wav"></audio>
+                        <button class=" rounded-full h-12 w-12 bg-black" id="myButton5"></button>
+                    </div>
+                    <div>
+                        <audio id="sound6" src="./audio/tom2.wav"></audio>
+                        <button class=" rounded-full h-12 w-12 bg-black" id="myButton6"></button>
+                    </div>
+                </div>
+                <div class="relative flex justify-around mr-8 ml-8 top-[-46px] md:mt-24">
+                    <div>
+                        <audio id="sound6" src="./audio/tom3.wav"></audio>
+                        <button class=" rounded-full  h-16 w-16 bg-black " id="myButton7"></button>
+                    </div>
+                    <div>
+                        <audio id="sound8" src="./audio/tom4.wav"></audio>
+                        <button class=" rounded-full h-16 w-16 bg-black " id="myButton8"></button>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="p-16 text-start md:p-2 md:w-64 md:ml-40	">
+            <h1 class="text-white text-6xl font-semibold p-2 md:text-6xl">Music for everyone.</h1>
+            <p class="p-2 text-sm md:text-base">Millions of songs. No credit card needed</p>
+            <button onclick="" class="text-white green py-2 px-8 m-2 rounded-[40px]">HIT THE</button>
+        </div>
+
+
 
         <section class="p-8 lg:hidden">
             <div class="circle flex justify-center items-center">
-                <h2>Hit</h2>
+                <audio id="sound9" src="./audio/tom3.wav"></audio>
+                <button id="myButton9">
+                    <h2>Hit</h2>
+                </button>
             </div>
         </section>
     </main>
-    <footer class="text-center py-32 px-8 w-full h-auto">
-        <h2 class="text-2xl text-white font-normal lg:text-3xl">Try Premium free for 1 month.</h2>
+
+    <footer class="text-center py-32 px-8 w-full h-auto md:relative md:mt-60">
+        <h2 class="text-2xl text-white font-normal lg:text-4xl">Try Premium free for 1 month.</h2>
         <p class="text-xs p-2 lg:text-base">Play millions of songs ad-free, on-demand and offline.</p>
-        <button onclick="" class="bg-white text-slate-950 py-2 px-4 m-2 rounded-[40px]">SEE
+        <button onclick="" class="bg-white text-slate-950 py-2 px-4 m-2 rounded-[40px] md:w-40 md:h-14">SEE
             PRICING</button>
     </footer>
-    <script>
-        function Menu(e) {
-            let list = document.querySelector('ul');
-
-            e.name === 'menu' ? (e.name = "close", list.classList.add('right-[0px]'), list.classList.add('opacity-100')
-            ) : (e.name = "menu", list.classList.remove('right-[0px]'), list.classList.remove('opasity-100'))
-        }
-    </script>
+    
+    <script src="button_music.js"></script>
+    <script src="menu_hamburguesa.js">  </script>
 
 </html>
