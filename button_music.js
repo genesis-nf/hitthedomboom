@@ -1,62 +1,62 @@
-var button = document.getElementById('myButton');
-var sound = document.getElementById('sound');
+var button1 = document.getElementById('myButton');
+var sound1 = document.getElementById('sound');
 
-button.addEventListener('click', function() {
-  sound.play();
+button1.addEventListener('click', function() {
+  sound1.play();
 });
 
-var button = document.getElementById('myButton2');
-var sound = document.getElementById('sound2');
+var button2 = document.getElementById('myButton2');
+var sound2 = document.getElementById('sound2');
 
-button.addEventListener('click', function() {
-  sound.play();
+button2.addEventListener('click', function() {
+  sound2.play();
 });
 
-var button = document.getElementById('myButton3');
-var sound = document.getElementById('sound3');
+var button3 = document.getElementById('myButton3');
+var sound3 = document.getElementById('sound3');
 
-button.addEventListener('click', function() {
-  sound.play();
+button3.addEventListener('click', function() {
+  sound3.play();
 });
 
-var button = document.getElementById('myButton4');
-var sound = document.getElementById('sound4');
+var button4 = document.getElementById('myButton4');
+var sound4 = document.getElementById('sound4');
 
-button.addEventListener('click', function() {
-  sound.play();
+button4.addEventListener('click', function() {
+  sound4.play();
 });
 
-var button = document.getElementById('myButton5');
-var sound = document.getElementById('sound5');
+var button5 = document.getElementById('myButton5');
+var sound5 = document.getElementById('sound5');
 
-button.addEventListener('click', function() {
-  sound.play();
+button5.addEventListener('click', function() {
+  sound5.play();
 });
 
-var button = document.getElementById('myButton6');
-var sound = document.getElementById('sound6');
+var button6 = document.getElementById('myButton6');
+var sound6 = document.getElementById('sound6');
 
-button.addEventListener('click', function() {
-  sound.play();
+button6.addEventListener('click', function() {
+  sound6.play();
 });
 
-var button = document.getElementById('myButton7');
-var sound = document.getElementById('sound7');
+var button7 = document.getElementById('myButton7');
+var sound7 = document.getElementById('sound7');
 
-button.addEventListener('click', function() {
-  sound.play();
+button7.addEventListener('click', function() {
+  sound7.play();
 });
 
-var button = document.getElementById('myButton8');
-var sound = document.getElementById('sound8');
+var button8 = document.getElementById('myButton8');
+var sound8 = document.getElementById('sound8');
 
-button.addEventListener('click', function() {
-  sound.play();
+button8.addEventListener('click', function() {
+  sound8.play();
 });
 
-var button = document.getElementById('myButton9');
-var sound = document.getElementById('sound9');
+var button9 = document.getElementById('myButton9');
+var sound9 = document.getElementById('sound9');
 
-button.addEventListener('click', function() {
-  sound.play();
+button9.addEventListener('click', function() {
+  sound9.play();
 });
